@@ -9,6 +9,7 @@ class AwsEcsUtils < Formula
   sha256 "3b38994954abd0f233176ac1579b97c552d4204526fbb1f0c2ca288d6e5fb792"
 
   depends_on "awscli"
+  depends_on "jq"
 
   def install
     bin.install "bin/ecs-connect"
