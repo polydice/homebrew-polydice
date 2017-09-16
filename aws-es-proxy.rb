@@ -1,8 +1,8 @@
 class AwsEsProxy < Formula
   desc "Small web server sitting between your HTTP client and AWS Elasticsearch service."
   homepage "https://github.com/abutaha/aws-es-proxy"
-  url "https://github.com/abutaha/aws-es-proxy/archive/v0.3.tar.gz"
-  sha256 "0ca80b0823fe0cb4103b0e9a3b1f062a911f6d247cc8a0bed45cbc2c93e5c7ed"
+  url "https://github.com/abutaha/aws-es-proxy/archive/v0.4.tar.gz"
+  sha256 "e8f0590401af2fd23f9cbdae6069c337a762617256eaea79cc57d1b7c8b95842"
   head "https://github.com/abutaha/aws-es-proxy.git"
 
   depends_on "glide" => :build
