@@ -1,8 +1,8 @@
 class AwsEsProxy < Formula
   desc "Small web server sitting between your HTTP client and AWS Elasticsearch service."
   homepage "https://github.com/abutaha/aws-es-proxy"
-  url "https://github.com/abutaha/aws-es-proxy/archive/v0.4.tar.gz"
-  sha256 "e8f0590401af2fd23f9cbdae6069c337a762617256eaea79cc57d1b7c8b95842"
+  url "https://github.com/abutaha/aws-es-proxy/archive/v0.8.tar.gz"
+  sha256 "f1462dcfd75aa2a8e7e370f2cfac3241bcc44de3406181fc164b9c1f90315f2c"
   head "https://github.com/abutaha/aws-es-proxy.git"
 
   depends_on "glide" => :build
@@ -22,7 +22,7 @@ class AwsEsProxy < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
       Before you can use these tools you must export some variables to your $SHELL.
         export AWS_ACCESS_KEY="<Your AWS Access ID>"
         export AWS_SECRET_KEY="<Your AWS Secret Key>"
