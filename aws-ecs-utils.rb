@@ -5,11 +5,19 @@
 class AwsEcsUtils < Formula
   desc "Connect to shell of containerized application like you were used to before Docker"
   homepage "https://github.com/polydice/aws-ecs-utils"
-  url "https://github.com/polydice/aws-ecs-utils/archive/v0.1.0.tar.gz"
-  sha256 "3b38994954abd0f233176ac1579b97c552d4204526fbb1f0c2ca288d6e5fb792"
+  url "https://github.com/polydice/aws-ecs-utils/archive/v0.1.1.tar.gz"
+  sha256 "81957754255e16d08f6515564489f73457e2098af73f5a649d0f909ff93c987f"
 
   depends_on "awscli"
   depends_on "jq"
+
+  def caveats
+    <<~EOS
+      Notice: AWS CLI's Session Manager plugin is required.
+
+      You can install via `brew install --cask session-manager-plugin`.
+    EOS
+  end
 
   def install
     bin.install "bin/ecs-connect"
